@@ -5,13 +5,11 @@ int find(int par[], int x) {
         return x;
     }
     return find(par,par[x]);
-    
 }
 
 void unionSet(int par[], int x, int z) {
     // add code here.
-      int px = find(par,x);
-      int pz = find(par,z);
-      par[px]=pz;
-    
+    int p_x=find(par,x);
+    int p_z=find(par,z);
+    par[p_x]=p_z;
 }
