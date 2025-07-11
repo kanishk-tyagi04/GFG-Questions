@@ -15,8 +15,7 @@ int V = adj.size();
     q.push(s);
 
     while (!q.empty()) {
- 
-        int curr = q.front();
+      int curr = q.front();
         q.pop();
         res.push_back(curr);
 
